@@ -35,4 +35,35 @@
     background-color: #53546D;
     height: 20px;
     width: 20px;
+    position: relative;
+}
+
+.radioField:before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #53546D;
+    z-index: 5;
+    visibility: visible;
+    background-color: transparent;
+}
+
+.radioField:checked:after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    border-radius: 50%;
+    background-color: #53546D;
+    height: 12px;
+    width: 12px;
+    z-index: 5;
+    visibility: visible;
 }
