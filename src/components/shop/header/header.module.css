@@ -1,0 +1,28 @@
+.header {
+    grid-area: h;
+    padding: 10px 40px;
+    background: #FBFBFE;
+    width: 100%;
+    background-color: #FBFBFE;
+}
+
+.headerInner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.headerText {
+    margin-left: 375px;
+    color: #53546D;
+    width: 100%;
+}
+
+.category {
+    color: #F3AF3C;
+}

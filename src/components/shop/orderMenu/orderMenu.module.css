@@ -1,0 +1,34 @@
+.orderMenuContainer{
+    width: 900px;
+    height: 495px;
+    background-color: #FAFAFD;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    padding: 40px;
+    position: relative;
+}
+
+.closeBtn {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.closeBtn img {
+    height: 100%;
+    width: 100%;
+}
+
+.orderMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+}

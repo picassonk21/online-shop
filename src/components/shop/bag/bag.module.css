@@ -1,0 +1,59 @@
+.bag {
+    grid-area: b;
+    padding-left: 10px;
+}
+
+.bagTitle {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #53546D;
+}
+
+.bagInner {
+    text-align: center;
+    width: 100%;
+    height: 355px;
+    position: relative;
+}
+
+.emptyBag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate3d(-50%, -50%, 0);
+}
+
+.emptyBag img {
+    height: 162px;
+    width: 162px;
+}
+
+.emptyBagText {
+    font-size: 16px;
+    line-height: 19px;
+    color: #53546D;
+    opacity: 0.4;
+    text-transform: uppercase;
+}
+
+.bagFooter {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.checkoutBtn {
+    display: inline-block;
+    padding: 6px 12px 5px 10px;
+    text-transform: uppercase;
+    color: #fafafd;
+    background: #53546d;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.checkoutBtn:focus {
+    outline: none;
+}

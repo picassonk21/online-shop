@@ -1,0 +1,11 @@
+.orderList {
+    margin-bottom: 44px;
+}
+
+.totalSum {
+    text-align: right;
+}
+
+.totalSum span {
+    padding-left: 4px;
+}

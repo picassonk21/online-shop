@@ -1,0 +1,22 @@
+.menu {
+    grid-area: m;
+    color: #53546D;
+    padding-left: 10px;
+}
+
+.categoryList {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+
+.categoryItem {
+    color: inherit;
+    text-decoration: none;
+}
+
+.activeCategoryItem {
+    color: #F3AF3C;
+}

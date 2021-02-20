@@ -1,0 +1,70 @@
+.orderedItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #53546D
+}
+
+.productInfo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.itemLogo {
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.itemLogo img {
+    height: 56px;
+    width: 56px;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.itemPrice {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.orderInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemAmount {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.removeBtn {
+    width: 16px;
+    height: 16px;
+    padding-right: 25px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.removeBtn img {
+    width: 16px;
+    height: 16px;
+}
+
+.itemSumToPay {
+    font-size: 18px;
+    line-height: 21px;
+    width: 49px;
+    text-align: right;
+}
