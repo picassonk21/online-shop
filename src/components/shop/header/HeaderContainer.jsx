@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Header from './Header';
-import styles from './header.module.css'
+import styles from './header.module.css';
+import { deleteActiveCategory } from '../../../redux/productsReducer'
 
 class HeaderContainer extends React.Component {
     render() {
@@ -19,4 +20,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {})(HeaderContainer);
+export default connect(mapStateToProps, {deleteActiveCategory})(HeaderContainer);

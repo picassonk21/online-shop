@@ -26,3 +26,8 @@ img {
 .category {
     color: #F3AF3C;
 }
+
+.allCategories {
+    text-decoration: none;
+    cursor: auto;
+}
