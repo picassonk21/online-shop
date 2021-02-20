@@ -19,12 +19,12 @@ class OrderFormContainer extends React.Component {
         .then(
             response => console.log(response)
         )
-
     }
+
     render() {
         return (
             <div>
-                <OrderForm onSubmit={this.onSubmit} />
+                <OrderForm onSubmit={this.onSubmit} initialValues={{paymentType: "cash"}}/>
             </div>
         )
     }
@@ -32,7 +32,7 @@ class OrderFormContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        products: productsInBagSelector(state)
+        products: productsInBagSelector(state),
     }
 }
 
