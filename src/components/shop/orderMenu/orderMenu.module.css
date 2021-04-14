@@ -1,6 +1,6 @@
 .orderMenuContainer{
-    width: 900px;
-    height: 495px;
+    width: 1020px;
+    height: 600px;
     background-color: #FAFAFD;
     position: absolute;
     left: 50%;
@@ -27,8 +27,15 @@
 }
 
 .orderMenu {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     height: 100%;
+}
+
+.orderFormInner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

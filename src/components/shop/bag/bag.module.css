@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .bag {
     grid-area: b;
     padding-left: 10px;
@@ -8,6 +14,8 @@
     line-height: 19px;
     text-transform: uppercase;
     color: #53546D;
+    text-align: center;
+    font-weight: bold;
 }
 
 .bagInner {
@@ -38,9 +46,15 @@
 }
 
 .bagFooter {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.priceSum {
+  font-weight: bold;
 }
 
 .checkoutBtn {
@@ -52,8 +66,42 @@
     font-size: 16px;
     line-height: 19px;
     cursor: pointer;
+    border: none;
 }
 
 .checkoutBtn:focus {
     outline: none;
+}
+
+.bagList {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.productItemInner {
+  text-align: center;
+}
+
+.productImage img{
+  width: 80px;
+  height: 80px;
+}
+
+.removeItemBtn {
+  display: inline-block;
+  color: #fafafd;
+  background: #53546d;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+.removeItemBtn:focus {
+  outline: none;
 }

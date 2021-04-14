@@ -29,7 +29,7 @@ const OrderForm = (props) => {
                 </div>
                 <div className={s.orderFormButtons}>
                     <button className={s.buyBtn + ' ' + s.orderBtn} >buy</button>
-                    <div className={s.cancelBtn + ' ' + s.orderBtn}>cancel</div>
+                    <div className={s.cancelBtn + ' ' + s.orderBtn} onClick={() => props.toggleConfirmOrderMode(false)}>cancel</div>
                 </div>
             </form>
         </div>

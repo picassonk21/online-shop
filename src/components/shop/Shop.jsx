@@ -14,9 +14,13 @@ const Shop = (props) => {
                 <MenuContainer />
                 <BagContainer />
                 <ProductsContainer />
-                <Footer />
+                {/* <Footer /> */}
             </div>
-            <div className={s.orderMenu + ' ' + (props.confirmOrderMode? '' : s.hidden)}>
+            <div className={s.orderMenu + (props.confirmOrderMode ? '' : ' ' + s.hidden)} onClick={(e) => {
+              if(e.target.className === s.orderMenu) {
+                props.toggleConfirmOrderMode(false);
+              }
+            }}>
                 <OrderMenuContainer />
             </div>
         </div>

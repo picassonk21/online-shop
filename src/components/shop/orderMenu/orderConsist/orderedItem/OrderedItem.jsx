@@ -13,7 +13,7 @@ const OrderedItem = (props) => {
                         {props.title}
                     </div>
                     <div className={s.itemPrice}>
-                        {props.price}$
+                        price: {props.price}$
                     </div>
                 </div>
             </div>

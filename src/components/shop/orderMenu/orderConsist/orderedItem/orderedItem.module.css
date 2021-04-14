@@ -9,6 +9,7 @@
 .productInfo {
     display: flex;
     align-items: flex-start;
+    height: 56px;
 }
 
 .itemLogo {
@@ -27,9 +28,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: space-around;
     font-size: 16px;
     line-height: 19px;
+    height: 56px;
 }
 
 .itemPrice {

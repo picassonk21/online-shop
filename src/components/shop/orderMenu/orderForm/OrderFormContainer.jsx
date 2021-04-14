@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import { shopAPI } from '../../../../api/api'
 import { productsInBagSelector } from '../../../../selectors/productsSelector'
 import OrderForm from './OrderForm'
+import { toggleConfirmOrderMode } from '../../../../redux/orderReducer'
+import s from "./orderForm.module.css";
 
 class OrderFormContainer extends React.Component {
     onSubmit = (formData) => {
@@ -23,8 +25,8 @@ class OrderFormContainer extends React.Component {
 
     render() {
         return (
-            <div>
-                <OrderForm onSubmit={this.onSubmit} initialValues={{paymentType: "cash"}}/>
+            <div className={s.orderFormInner}>
+                <OrderForm onSubmit={this.onSubmit} initialValues={{paymentType: "cash"}} toggleConfirmOrderMode={this.props.toggleConfirmOrderMode}/>
             </div>
         )
     }
@@ -36,4 +38,4 @@ let mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, {})(OrderFormContainer)
+export default connect(mapStateToProps, {toggleConfirmOrderMode})(OrderFormContainer)
