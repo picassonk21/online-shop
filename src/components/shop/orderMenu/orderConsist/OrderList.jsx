@@ -1,6 +1,5 @@
 import OrderedItem from './orderedItem/OrderedItem';
 import s from './orderList.module.css';
-import { Carousel } from 'react-responsive-carousel';
 import Slider from './Slider/Slider';
 
 const OrderList = (props) => {
