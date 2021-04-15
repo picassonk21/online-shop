@@ -4,7 +4,8 @@ import Slider from './Slider/Slider';
 
 const OrderList = (props) => {
   let items = props.products.map(product => <OrderedItem {...product} totalSum={props.totalSum}
-    decreaseProductAmount={props.decreaseProductAmount} />)
+    decreaseProductAmount={props.decreaseProductAmount} setProductAmount={props.setProductAmount}
+    toggleProductIsBagged={props.toggleProductIsBagged} />)
   return (
     <div className={s.OrderList}>
       <Slider items={items} />

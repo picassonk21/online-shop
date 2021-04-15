@@ -18,7 +18,7 @@ const Bag = (props) => {
             </div>
             <div className={s.bagFooter}>
                 {props.sum > 0 && <div className={s.priceSum}>to pay: {Math.floor(props.sum * 100) / 100}$</div>}
-                <button className={s.checkoutBtn} disabled={props.isEmpty} onClick={ () => props.toggleConfirmOrderMode(true) }>proceed to checkout</button>
+                {props.sum > 0 && <button className={s.checkoutBtn} disabled={props.isEmpty} onClick={ () => props.toggleConfirmOrderMode(true) }>proceed to checkout</button>}
             </div>
             
         </div>

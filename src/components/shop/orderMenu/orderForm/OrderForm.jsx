@@ -1,7 +1,7 @@
 import { Field, reduxForm } from "redux-form"
 import { Input, Radio } from "../../../utils/formControls/formControls"
 import s from './orderForm.module.css'
-import { required, requiredRadio } from '../../../utils/validators/validators'
+import { required } from '../../../utils/validators/validators'
 
 const OrderForm = (props) => {
     return (
